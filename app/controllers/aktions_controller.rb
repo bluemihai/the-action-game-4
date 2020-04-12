@@ -1,6 +1,6 @@
 class AktionsController < ApplicationController
   before_action :set_aktion, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_player!
+  # before_action :authenticate_player!
 
   def start
   end
@@ -114,7 +114,7 @@ class AktionsController < ApplicationController
     end
 
     def aktion_params
-      params.require(:aktion).permit(:timeslot, :focus, :player_id, :verb_id, :project_id, :flow, 
+      params.require(:aktion).permit(:timeslot, :focus, :player_id, :verb_id, :project_id, :flow,
         :flow_notes, :value, :value_notes, :visible_to, :status, :intensity, :how_it_went, :music,
         :time_zone, :location_id, :role_id, :properties, :team_id, :water, :breaths, :pushups, :situps,
         :wallsits, :choice, :snack, :tidy, :stop, :restroom, :stretch, :games, :friends, :other,

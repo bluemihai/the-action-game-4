@@ -354,6 +354,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers (~> 0.10.0)
   better_errors
+  binding_of_caller
   bugsnag
   capybara
   coffee-rails (~> 4.1.0)

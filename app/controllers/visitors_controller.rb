@@ -22,5 +22,10 @@ class VisitorsController < ApplicationController
   end
 
   def welcome
+    player = Player.find_by(email: params[:current_user])
+    if player
+      session[:player_id] = player.id
+      redirect_to edit_player_path(player), :notice => "Signed in as #{player.name}!"
+    end
   end
 end
