@@ -1,12 +1,15 @@
 #welcome
-  %h3 Welcome to TheActionGame.com!
+  .row
+    %h3 Welcome to The Action Game!
 
-  %p Thank you for helping out as a beta tester!
-
-  %ul
-    %li This site is not yet ready for do-it-yourself users.
-    %li
-      %span In order to get started and learn about it, please
-      %span= link_to 'contact us', contact_path
-      %span to schedule a 25-minute intro.
-    %li Your only cost would be another 25-minute session where you give us feedback about the site.
+  .row
+    .large-10.medium-12.small-12.columns
+      %p Since we are not yet advertising publicly, you are likely here through word-of-mouth from your coach.
+      %p
+        If you have an invite to use the site, please
+        =link_to 'sign in with Google'
+        to get started.
+      %p
+        If you do not, please
+        = link_to 'register for coaching', 'foo'
+        — while we hope that eventually the website itself will do the teaching, we humbly acknowledge the currently poor UX and lack of context. This site has only ever served for clients who were already receiving small-group training on how to use it.

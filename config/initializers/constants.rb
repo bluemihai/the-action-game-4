@@ -17,18 +17,18 @@ COLORS = [
 CHOICE = 'I freely choose to play TAG.com'
 
 INTENSITIES = [
-  ['Attempted - Broke Key Rule (+3)', 2], 
+  ['Attempted - Broke Key Rule (+3)', 2],
   ['Loose - Barely Acceptable (+6)', 3],
   ['Solid - Followed All Rules (+8)', 4],
   ['Exceptional - Great Spirit (+10)', 5]
 ]
 
 STATUS_OPTIONS = [
-  ['Committing', :committing], 
-  ['Attempting', :attempting], 
+  ['Committing', :committing],
+  ['Attempting', :attempting],
   ['Stopped', :stopped],
-  ['Reviewed', :reviewed], 
-  ['Finished', :finished], 
+  ['Reviewed', :reviewed],
+  ['Finished', :finished],
 ]
 
 INTEGRITY_SCORES = {
@@ -40,13 +40,12 @@ INTEGRITY_SCORES = {
 }
 
 FLOW_VALUE_OPTIONS = [
-  ['+3 (Amazing)', 3],
-  ['+2 (Good)', 2],
-  ['+1 (Decent)', 1],
-  [' 0 (Average)', 0],
-  ['-1 (Questionable)', -1],
-  ['-2 (Poor)', -2],
-  ['-3 (Terrible)', -3]
+  ['6 (Black Belts Only)', 6],
+  ['5 (Awesome)', 5],
+  ['4 (Good)', 4],
+  ['3 (Questionable)', 3],
+  ['2 (Serious Issues)', 2],
+  ['1 (At Least I tried)', 1],
 ]
 
 FLOW_PLACEHOLDER = 'Subjectively, how did you feel? Was your body comfortable? Were you able to stay focused the whole time?'

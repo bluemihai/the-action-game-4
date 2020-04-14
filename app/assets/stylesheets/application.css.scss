@@ -93,9 +93,9 @@
 }
 
 .bold {
-  font-weight: bold;    
+  font-weight: bold;
   input {
-    font-weight: bold;    
+    font-weight: bold;
   }
 }
 
@@ -229,7 +229,7 @@ footer {
   color: white;
   a, a:visited {
     color: white;
-  } 
+  }
 }
 
 .sidebar-container {
@@ -274,7 +274,7 @@ footer {
     padding: 0px;
   }
   .inline-button {
-    background-color: green;    
+    background-color: green;
     margin-bottom: 0px;
     background-color: green;
   }
@@ -319,4 +319,8 @@ footer {
 .challenge-goal {
   float: right;
   margin-right: 2px;
+}
+
+.yellow {
+  background-color: yellow;
 }
