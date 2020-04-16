@@ -16,5 +16,9 @@ $(document).ready ->
   now_tag: (action) ->
 
   pollForNewActions: ->
+    <%# nowActions = $.ajax('/aktions/current').done((data) ->
+      result = ('<div class="sidebar-player today-summary">' + '<div class="img"><img height="20" width="20" src="' + action.gravatar + '"></div>' + '<div class="now-focus">' + action.focus + '</div>' + '</div>' for action in data).join('\n')
+      $('#now-actions').html(result)
+    ) %>
 
 
