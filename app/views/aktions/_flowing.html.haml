@@ -1,0 +1,5 @@
+%div
+  - current_actions = Aktion.current.sort_by{ |a| a.player.first_name }
+  - current_actions.each do |action|
+    = is_tagging(action)
+    %br

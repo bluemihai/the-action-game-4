@@ -1,11 +1,12 @@
 .medium-12.block
   .text-center.yellow-text NOW TAGGING
+  = render 'aktions/flowing'
   #now-actions
     = render 'aktions/now_aktions'
 
 - todays_players = Player.active_today.sort_by{ |p| p.todays_points }.reverse
 - if todays_players.count > 0
-  .medium-12.block  
+  .medium-12.block
     .text-center.yellow-text TODAY
     - todays_players.each do |p|
       .sidebar-player.today-summary
