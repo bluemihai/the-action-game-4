@@ -1,15 +1,18 @@
-.medium-12.block
-  .text-center.yellow-text NOW TAGGING
-  = render 'aktions/flowing'
-  #now-actions
-    = render 'aktions/now_aktions'
+%div.medium-12.block
+  = render 'aktions/flowing', use_gravatar: true
+  %hr
+  = render 'aktions/flowing', use_gravatar: false
+  - if false
+    #now-actions
+      = render 'aktions/now_aktions'
 
-- todays_players = Player.active_today.sort_by{ |p| p.todays_points }.reverse
-- if todays_players.count > 0
-  .medium-12.block
-    .text-center.yellow-text TODAY
-    - todays_players.each do |p|
-      .sidebar-player.today-summary
-        .img= link_to (image_tag p.gravatar, height: 20, width: 20), player_aktions_path(p, date: Time.zone.now.to_date)
-        .text-center.name= p.first_name
-        .text-right.stats= "#{p.todays_actions.count}/+#{p.todays_actions.map{|a|a.score}.sum}"
+- if false
+  - todays_players = Player.active_today.sort_by{ |p| p.todays_points }.reverse
+  - if todays_players.count > 0
+    .medium-12.block
+      .text-center.yellow-text TODAY
+      - todays_players.each do |p|
+        .sidebar-player.today-summary
+          .img= link_to (image_tag p.gravatar, height: 20, width: 20), player_aktions_path(p, date: Time.zone.now.to_date)
+          .text-center.name= p.first_name
+          .text-right.stats= "#{p.todays_actions.count}/+#{p.todays_actions.map{|a|a.score}.sum}"
