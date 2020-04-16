@@ -17,16 +17,16 @@ module Flow
     end
 
     def call
-      action_events = RetrieveGcalActionsService.call(
-        calendar_id,
-        calendar_summary,
-        starting_datetime,
-        ending_datetime,
-      )
+      # action_events = RetrieveGcalActionsService.call(
+      #   calendar_id,
+      #   calendar_summary,
+      #   starting_datetime,
+      #   ending_datetime,
+      # )
 
-      action_events.each do |event_info|
-        import_action(event_info)
-      end
+      # action_events.each do |event_info|
+      #   import_action(event_info)
+      # end
     end
 
     private
