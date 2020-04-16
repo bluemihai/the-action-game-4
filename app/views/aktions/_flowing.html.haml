@@ -1,5 +1,6 @@
 %div
   .text-center.yellow-text NOW FLOWING
+  %br
   - current_actions = Aktion.current.sort_by{ |a| a.player.first_name }
   - current_actions.each do |action|
     .isflowing= use_gravatar ? gravatar_is_flowing(action) : name_is_flowing(action)
